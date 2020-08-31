@@ -1,0 +1,124 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+  background-color:rgba(226,203,197,1) ;
+  font-size: 16px;
+  font-family: Helvetica;
+}
+
+h1 {
+	padding:0.8em;
+	text-align:center;
+	font-family: Georgia;
+	font-size:2.5rem;
+	text-shadow: 0 2px, 0 2px, 0 2px;
+	color:rgba(115,39,17,0.9);
+	background-color: rgba(208,64,15,0.6);	
+}
+.final, .prevcg, .currcgp {
+    width:70%;
+    margin:2em auto;
+    background:rgba(208,64,15,0.6);
+	border-radius:15px;
+	border: 2px solid rgba(115,39,17,0.9);
+}
+
+
+h2 {
+	padding:0.5em;
+	text-align:center;
+	font-weight: bold;
+	color:white;
+	background-color: rgba(115,39,17,0.7);	
+	border-radius:13px 13px 0 0;
+}
+
+.flexp1 {
+	padding:1.5em;
+	margin:0.3em;
+	display:grid;
+	grid-template-columns: 55% 10%;
+	grid-row-gap: 1em;
+
+}
+.flexp1 label, .flexp2 label {
+	  text-align: right;
+	  margin-right:1em;
+
+}
+.flexp2 {
+	padding:1.5em;
+	margin:0.3em;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	align-items: center;
+	grid-row-gap: 1em;
+}
+
+.eachCourse {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin:1em;
+    padding:0.5em;
+    border:rgba(115,39,17,0.7) solid 2px;
+	border-radius:10px;
+}
+
+input[type="button"], input[type="submit"] {
+    margin:0.7em;
+    padding:0.5em;
+    color:white;
+    font-size:1rem;
+    background-color: rgba(115,39,17,0.7);
+    border: 1.5px rgba(115,39,17,1) solid;
+	border-radius:10px;
+}
+input[type="button"]:hover, input[type="submit"]:hover {
+	background-color:rgb(85,39,34);
+	font-weight: 450;
+}
+input:focus {
+	outline:black;
+}
+input[type="button"]:focus, input[type="submit"]:focus {
+	outline:none;
+}
+.prevcg label,.final label, .eachCourse  label {
+	color:black;
+    font-weight:bold;
+}
+
+
+.attribution {
+	background:rgba(208,64,15,0.6);
+	font-weight: bold;
+	text-align:center;
+	padding:10px;
+}
+
+@media(max-width:700px) {
+    .flexp1 {
+    	grid-template-columns: 100%;
+    }
+    .flexp2 {
+    	grid-template-columns: 1fr 1fr;
+    }
+	.eachCourse {
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		grid-row-gap:0.25em;
+	} 
+	
+	.final, .prevcg, .currcgp {
+	    width:95%;
+   }
+   .eachCourse .delete {
+   	 padding:0.3em 0.3em;
+   	 margin:0.2em;
+   }
+   
+}

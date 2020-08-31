@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title> CGPA CALCULATOR </title>
+  </head>
+  <body>
+    <h1> CGPA CALCULATOR </h1>
+    <form name="cgform">
+
+        <div class="prevcg">
+            <h2> Previous semesters details </h2>
+            <div class="flexp1">
+            <label for="prevtcredits"> Enter the total number of credits earned so far: </label>
+            <input type="number" id="prevtcredits">
+            <label for="prevcgpa" > Enter your current CGPA: </label>
+            <input type="number" step="0.01" id="prevcgpa">
+            </div>
+        </div>
+
+        <div class="currcgp">
+            <div class="currcg">
+                <h2> Current semester details </h2>
+            </div>
+                <input type="button" value="Add a new course" name="add">
+                <input type="submit" value="submit">
+        </div>
+
+        <div class="final">
+            <h2> Final CGPA </h2>
+            <div class="flexp2">
+                <label for="tcredits"> Total credits: </label>
+                <input type="text" id="tcredits" name="tcredits">
+                <label for="cgpa" > CGPA: </label>
+                <input type="text" id="cgpa" name="cgpa">
+            </div>
+        </div>
+
+        
+    </form>
+    <p class="attribution">
+  Coded by Nohan Joemon .
+  </p>
+    <script type="text/javascript" src="main.js">
+    </script>
+      </body>
+</html>

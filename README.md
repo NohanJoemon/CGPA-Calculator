@@ -1,5 +1,10 @@
 # CGPA-Calculator
-This repository contains a cgpa calculator webpage built using vanilla javascript and styled using vanilla css
-## Features:
-- The user can provide details about cgpa of previous semesters and grades of this semester
-- The user can add/delete current courses dynamically
+Cgpa calculator webpage built using vanilla javascript and styled using vanilla css
+
+## Preview
+![image](https://user-images.githubusercontent.com/62956111/129086275-968b70d9-9764-4396-8c48-7ba30c507c95.png)
+
+
+## Webpage link:
+I hosted my solution in [this](https://cgpa-calculator-nohan.netlify.app/) webpage using Netlify
+
